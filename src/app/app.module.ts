@@ -4,8 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { UdobjectListComponent } from './udobject-list/udobject-list.component';
-import { UDObjectService } from './udobject.service'
+import { UdobjectListComponent } from './component/udobject-list/udobject-list.component';
+import { UDObjectService } from './service/udobject.service'
 import { RouterModule, Routes } from '@angular/router'
 
 const routes: Routes = [

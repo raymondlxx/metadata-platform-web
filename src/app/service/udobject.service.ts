@@ -3,7 +3,7 @@ import { Headers, Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { UDObject } from './module/udobject';
+import { UDObject } from '../module/udobject';
 
 @Injectable()
 export class UDObjectService {
@@ -15,7 +15,7 @@ export class UDObjectService {
 	getUDObjects(): Promise<UDObject[]> {
 		return this.http.get(this.heroesUrl+"udobjects")
 			.toPromise()
-			.then(response => response.json().data as UDObject[])
+			.then(response => {return response.json() as UDObject[]})
 			.catch(this.handleError);
 	}
 

@@ -1,0 +1,44 @@
+<h1>object list</h1>
+<table class="table table-bordered table-striped table-condensed">
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>name</th>
+			<th>create time</th>
+			<th>update time</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor = "let udobj of udobjects">
+			<td>{{udobj.id}}</td>
+			<td>{{udobj.name}}</td>
+			<td>{{udobj.createTime}}</td>
+			<td>
+				<span class="badge badge-success">{{udobj.updateTime}}</span>
+			</td>
+		</tr>
+		
+	</tbody>
+</table>
+<nav>
+	<ul class="pagination">
+		<li class="page-item">
+			<a class="page-link" href="#">Prev</a>
+		</li>
+		<li class="page-item active">
+			<a class="page-link" href="#">1</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="#">2</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="#">3</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="#">4</a>
+		</li>
+		<li class="page-item">
+			<a class="page-link" href="#">Next</a>
+		</li>
+	</ul>
+</nav>
